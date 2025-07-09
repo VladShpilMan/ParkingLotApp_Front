@@ -1,0 +1,149 @@
+@import 'variables';
+
+body {
+  margin: 0;
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: $spacing-md;
+}
+
+h1 {
+  font-size: $font-size-2xl;
+  font-weight: bold;
+  margin-bottom: $spacing-md;
+}
+
+h2 {
+  font-size: $font-size-xl;
+  margin-bottom: $spacing-sm;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
+  margin-bottom: $spacing-md;
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    min-width: auto;
+
+    label {
+      font-size: $font-size-base;
+      color: $text-color;
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+
+    input,
+    select {
+      padding: 8px;
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+      font-size: $font-size-base;
+
+      &[type="number"],
+      &[type="date"] {
+        min-width: 150px;
+        height: 100%;
+      }
+
+      &[type="time"] {
+        width: 55px;
+        height: 100%;
+      }
+
+      &::placeholder {
+        color: lighten($text-color, 40%);
+        opacity: 1;
+      }
+    }
+
+  }
+
+  button {
+    padding: 8px;
+    border: none;
+    border-radius: $border-radius;
+    background-color: $primary-color;
+    color: $white;
+    cursor: pointer;
+    font-size: $font-size-base;
+    height: 34px;
+    align-self: flex-end;
+    line-height: 1;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+
+.btn {
+  padding: 8px;
+  border-radius: $border-radius;
+  cursor: pointer;
+  font-size: $font-size-base;
+  border: none;
+
+  &.btn-edit {
+    background-color: $secondary-color;
+    color: $white;
+
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+
+  &.btn-delete {
+    background-color: $danger-color;
+    color: $white;
+
+    &:hover {
+      background-color: darken($danger-color, 10%);
+    }
+  }
+
+  &.btn-cancel {
+    background-color: $border-color;
+    color: $text-color;
+
+    &:hover {
+      background-color: darken($border-color, 10%);
+    }
+  }
+}
+
+  .loading {
+    font-size: $font-size-lg;
+    color: $text-color;
+    text-align: center;
+    margin: $spacing-md 0;
+  }
+
+  .no-areas {
+    font-size: $font-size-lg;
+    color: $text-color;
+    text-align: center;
+    margin: $spacing-md 0;
+    font-style: italic;
+  }
+
+.error-message {
+  white-space: pre-line;
+  color: $danger-color;
+  margin-bottom: $spacing-sm;
+  font-size: $font-size-base;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}

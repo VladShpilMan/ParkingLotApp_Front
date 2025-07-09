@@ -1,0 +1,47 @@
+@import 'variables';
+
+.parking-areas {
+  .parking-area-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spacing-sm;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    background-color: $white;
+    margin-bottom: $spacing-sm;
+    box-shadow: 0 2px 5px $border-color;
+
+    .info {
+      flex-grow: 1;
+
+      .name {
+        font-weight: bold;
+        font-size: $font-size-lg;
+        margin-bottom: 5px;
+        color: $text-color;
+      }
+
+      .details {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        font-size: $font-size-base;
+        color: darken($text-color, 20%);
+      }
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: $spacing-sm;
+    }
+  }
+
+  .form-actions {
+    display: flex;
+    gap: $spacing-sm;
+    align-self: flex-end;
+  }
+}

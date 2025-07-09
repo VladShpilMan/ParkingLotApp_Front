@@ -1,0 +1,52 @@
+@import 'variables';
+
+.parking-calculation {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+    margin-bottom: $spacing-md;
+  }
+
+  .result-box {
+    padding: $spacing-md;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    box-shadow: 0 4px 12px $border-color;
+    margin-top: $spacing-md;
+    animation: fadeIn 0.5s ease-in-out;
+
+    .result-content {
+      display: flex;
+      align-items: center;
+      gap: $spacing-sm;
+    }
+
+    .result-text {
+      font-size: $font-size-lg;
+      color: $text-color;
+      margin: 0;
+
+      .result-amount {
+        font-weight: bold;
+        color: darken($primary-color, 10%);
+      }
+
+      .result-currency {
+        font-weight: 500;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
