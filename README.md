@@ -43,4 +43,4 @@ npm run start
 
 ## Notes
 - The application requires a running backend API to function correctly.
-- For backend setup instructions, refer to the backend documentation.
+- For backend setup instructions, refer to the backend documentation (https://github.com/VladShpilMan/ParkingLotApp_Back).
