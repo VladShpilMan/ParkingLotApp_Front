@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ParkingAreasApiService from '../services/ParkingAreasApiService';
-import ParkingAreaForm from '../components/ParkingAreaForm';
-import ParkingAreaItem from '../components/ParkingAreaItem';
+import ParkingAreaForm from '../components/ParkingAreas/ParkingAreaForm';
+import ParkingAreaItem from '../components/ParkingAreas/ParkingAreaItem';
 import '../styles/ParkingAreas.scss';
 
 const ParkingAreas = () => {
